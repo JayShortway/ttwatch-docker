@@ -13,6 +13,10 @@ on:
           - 'true'
           - 'false'
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   release:
     # Only run if the release input is set to true
