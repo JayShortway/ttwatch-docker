@@ -1,5 +1,5 @@
 # ttwatch-docker
-Dockerized [ttwatch](https://github.com/ryanbinns/ttwatch)
+Dockerized [ttwatch](https://github.com/ryanbinns/ttwatch).
 
 ## How to
 
