@@ -6,7 +6,7 @@ Dockerized [ttwatch](https://github.com/ryanbinns/ttwatch)
 ### Option A: Use a symlink
 Steps 1 through 4 only have to be performed at first use.
 1. Figure out the vendor and product ID of your watch using `lsusb`. Use `lsusb -v` for more descriptive output.
-2. Create a `udev` rule file on the host at `/etc/udev/rules.d/99-tomtom-watch.rules`, and add the following rule. Make sure the vendor ID and product ID are correct for your watch.
+2. Create a `udev` rule file on the host at `/etc/udev/rules.d/99-tomtom-watch.rules`, and add the following rule. Make sure the vendor and product ID are correct for your watch.
 ```shell
 SUBSYSTEM=="usb", ATTR{idVendor}=="1390", ATTR{idProduct}=="7474", SYMLINK+="tomtom_watch"
 ```
